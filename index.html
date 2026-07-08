@@ -176,7 +176,7 @@
 
     <div class="hero-meta">
       <span class="pill">📍 Chennai, India</span>
-      <span class="pill"><b>B.Tech CSE</b> · BIHER</span>
+      <span class="pill">🎓 <b>B.Tech CSE</b> · BIHER · graduated 2026</span>
       <span class="pill">open to <b>internships / SDE roles</b></span>
     </div>
 
@@ -189,7 +189,7 @@
   <section id="about">
     <div class="section-tag">01 / about</div>
     <h2 class="reveal">I build systems that plug AI into real problems.</h2>
-    <p class="section-sub reveal">Software engineer and AI engineer based in Chennai, currently completing a B.Tech in Computer Science at Bharath Institute of Science &amp; Technology.</p>
+    <p class="section-sub reveal">Software engineer and AI engineer based in Chennai, holding a B.Tech in Computer Science from Bharath Institute of Science &amp; Technology (graduated May 2026).</p>
 
     <div class="about-grid">
       <div class="about-text reveal">
@@ -212,7 +212,7 @@
   <section id="projects">
     <div class="section-tag">02 / projects</div>
     <h2 class="reveal">Selected work</h2>
-    <p class="section-sub reveal">Seven projects spanning AI engineering, full-stack apps, and automation — each solving a specific, named problem.</p>
+    <p class="section-sub reveal">Nine projects spanning AI engineering, full-stack apps, and automation — each solving a specific, named problem.</p>
     <div class="project-grid" id="project-grid"></div>
   </section>
 
@@ -286,6 +286,24 @@ const projects = [
     tags: ["FastAPI", "Next.js", "TypeScript", "Gemini API", "SQLite", "Railway"],
     github: "https://github.com/Vigneshyadala/ai-career-platform",
     demo: "https://ai-career-platform-zeta.vercel.app"
+  },
+  {
+    name: "Autonomous SRE Agent",
+    file: "autonomous-sre-agent",
+    role: "AI Engineer · DevOps",
+    desc: "Self-healing infrastructure agent — watches a live containerized app, diagnoses incidents against a RAG runbook knowledge base in ChromaDB, and autonomously executes the fix via an allow-listed Docker toolset. Detect → Diagnose → Decide → Heal → Verify, fully audited via /incidents.",
+    tags: ["Python", "LangChain", "ChromaDB", "FastAPI", "Docker Compose", "Node.js"],
+    github: "https://github.com/Vigneshyadala/Autonomous-SRE-Agent-Self-Healing-DevOps-System",
+    demo: null
+  },
+  {
+    name: "Pulse Chat",
+    file: "pulse-chat",
+    role: "Full-Stack Developer",
+    desc: "Real-time multi-room chat app with live typing indicators and online presence — built on Express + Socket.io using WebSocket rooms to scope messages, presence, and typing state entirely in memory, no database required.",
+    tags: ["Node.js", "Express", "Socket.io", "HTML5", "JavaScript"],
+    github: "https://github.com/Vigneshyadala/pulse-chat",
+    demo: "https://pulse-chat-rj4d.onrender.com"
   },
   {
     name: "CivicGuide",
@@ -381,7 +399,7 @@ const lines = [
   { type: 'cmd', text: 'cat role.txt' },
   { type: 'out', text: 'Software Engineer · AI Engineer · Full-Stack Developer' },
   { type: 'cmd', text: './build --stack="Python, React, Gemini, Claude"' },
-  { type: 'out', text: 'status: shipped 7 projects · ready for the next one' }
+  { type: 'out', text: 'status: shipped 9 projects · ready for the next one' }
 ];
 
 function renderStatic() {

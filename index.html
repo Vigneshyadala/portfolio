@@ -212,7 +212,7 @@
   <section id="projects">
     <div class="section-tag">02 / projects</div>
     <h2 class="reveal">Selected work</h2>
-    <p class="section-sub reveal">Nine projects spanning AI engineering, full-stack apps, and automation — each solving a specific, named problem.</p>
+    <p class="section-sub reveal">Ten projects spanning AI engineering, full-stack apps, and automation — each solving a specific, named problem.</p>
     <div class="project-grid" id="project-grid"></div>
   </section>
 
@@ -294,7 +294,7 @@ const projects = [
     desc: "Self-healing infrastructure agent — watches a live containerized app, diagnoses incidents against a RAG runbook knowledge base in ChromaDB, and autonomously executes the fix via an allow-listed Docker toolset. Detect → Diagnose → Decide → Heal → Verify, fully audited via /incidents.",
     tags: ["Python", "LangChain", "ChromaDB", "FastAPI", "Docker Compose", "Node.js"],
     github: "https://github.com/Vigneshyadala/Autonomous-SRE-Agent-Self-Healing-DevOps-System",
-    demo: null
+    demo: "https://vigneshyadala.github.io/Autonomous-SRE-Agent-Self-Healing-DevOps-System/"
   },
   {
     name: "Pulse Chat",
@@ -304,6 +304,15 @@ const projects = [
     tags: ["Node.js", "Express", "Socket.io", "HTML5", "JavaScript"],
     github: "https://github.com/Vigneshyadala/pulse-chat",
     demo: "https://pulse-chat-rj4d.onrender.com"
+  },
+  {
+    name: "SentinelStream",
+    file: "sentinelstream-fraud-pipeline",
+    role: "AI Engineer · Data Engineering",
+    desc: "Distributed real-time fraud detection pipeline — ingests card transactions through Kafka, scores every event in-flight against three sliding-window rules (velocity, high-amount, impossible travel), and dual-routes results: alerts into TimescaleDB in milliseconds, raw history into a MinIO data lake as Parquet.",
+    tags: ["Apache Kafka", "TimescaleDB", "MinIO (S3)", "FastAPI", "Grafana", "Docker Compose"],
+    github: "https://github.com/Vigneshyadala/sentinelstream-distributed-real-time-fraud-detection-pipeline",
+    demo: "https://vigneshyadala.github.io/sentinelstream-distributed-real-time-fraud-detection-pipeline/"
   },
   {
     name: "CivicGuide",
@@ -399,7 +408,7 @@ const lines = [
   { type: 'cmd', text: 'cat role.txt' },
   { type: 'out', text: 'Software Engineer · AI Engineer · Full-Stack Developer' },
   { type: 'cmd', text: './build --stack="Python, React, Gemini, Claude"' },
-  { type: 'out', text: 'status: shipped 9 projects · ready for the next one' }
+  { type: 'out', text: 'status: shipped 10 projects · ready for the next one' }
 ];
 
 function renderStatic() {
